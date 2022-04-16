@@ -1,5 +1,5 @@
 .frame {
-  border: solid rgb(26, 17, 146) 1px;
+  border: solid rgb(26, 17, 146) 0px;
   padding: 50px;
   background-color: rgb(100, 43, 95);
   box-shadow: 1px 1px 7px 1px rgb(141, 141, 141);
@@ -43,6 +43,7 @@
   width: 80%;
   text-align: center;
   font-size: x-large;
+  box-shadow: 1px 1px 7px 1px rgb(141, 141, 141);
 }
 
 .show-button {

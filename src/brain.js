@@ -14,7 +14,7 @@ export default function Puzzle({ movies, selectedCs }) {
       if (movie[index] === " ") {
         movieString.push(" ");
       } else {
-        movieString.push(movie[index]);
+        movieString.push(movie[index].toUpperCase());
       }
     }
     return movieString;
@@ -66,9 +66,6 @@ export default function Puzzle({ movies, selectedCs }) {
   }, [selectedCs]);
 
   useEffect(() => {
-    console.log(chosenMovie);
-    console.log(selectedCs);
-    console.log(characters);
     if (selectedCs.length > 0) {
       setCharacters(compare());
     }
